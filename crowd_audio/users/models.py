@@ -14,5 +14,7 @@ class User(AbstractUser):
     def __unicode__(self):
         return self.username
 
+
 class Profile(models.Model):
 	user = models.ForeignKey(User)
+
