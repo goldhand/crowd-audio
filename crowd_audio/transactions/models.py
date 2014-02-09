@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Transaction(models.Model):
+	key = models.TextField()
+	extra_data = models.TextField()
+
+	def __unicode__(self):
+		return self.key
