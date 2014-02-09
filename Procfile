@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath="$PWD/crowd-audio" config.wsgi:application
